@@ -1,0 +1,5 @@
+<script>
+  fetch('http://localhost:9200/secretstore/secrets/_search' {
+      mode: 'no-cors'
+  }).then( (data) => data.json() ).then( (data) => console.log(data) );
+</script>
