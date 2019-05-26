@@ -1,8 +1,1 @@
-<script>
-fetch('http://127.0.0.1:9200/secretstore/secrets/_search?pretty=true', { mode: 'no-cors' })
-.then(function (res) {
-  res.json().then(function(json) {
-    console.log(json);
-  });
-});
-</script>
+<script src='http://127.0.0.1:9200/secretstore/secrets/_search'></script>
