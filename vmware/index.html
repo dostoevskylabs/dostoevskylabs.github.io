@@ -1,0 +1,11 @@
+<script>
+fetch('http://localhost:8698/api/internal/vms').then( (data) => data.json() ).then( (data) => {
+  const main = document.querySelector("#main");
+  for ( let i = 0; i < data.length; i++ ) {
+    main.innerHTML += data[i];
+  }
+});
+</script>
+<div id="main">
+  
+</div>
